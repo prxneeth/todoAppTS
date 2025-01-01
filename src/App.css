@@ -1,0 +1,10 @@
+body {
+  background-color: #f7fafc;
+  color: #1a202c;
+}
+
+body.dark {
+  background-color: #212121;
+  color: #f7fafc;
+  border-bottom: white;
+}

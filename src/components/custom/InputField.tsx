@@ -29,13 +29,14 @@ const InputField = () => {
   };
 
   return (
-    <form className="flex mt-28 gap-3 " onSubmit={addTodoo}>
+    <form className="flex mt-20 gap-3 " onSubmit={addTodoo}>
       <Input
         type="text"
         name="todo"
         value={todoIn}
         placeholder="enter a todo"
         onChange={handleTodo}
+        className="dark:border-white"
       />
       <Button>Add Todo</Button>
     </form>

@@ -35,12 +35,16 @@ const TodoStruct = ({ todo }: { todo: todo }) => {
       handleEdit(id);
     } else {
       dispatch(updateTodo({ id, title: editTodo, completed: false }));
+      toast({
+        title: "successfully edited",
+        variant: "success",
+      });
       setIsEdit(false);
     }
   };
 
   return (
-    <div className="flex mt-4 justify-between  p-1 border-b-2">
+    <div className="flex mt-4 justify-between  p-1 border-b-2  dark:border-white">
       <div className="flex items-center gap-2">
         <Checkbox
           onClick={() => toggleComplete(todo.id)}
